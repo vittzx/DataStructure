@@ -20,7 +20,7 @@ public class BubbleSort {
 
         for(int i=0; i < vetor.length; i++){
             for(int j= i+1; j<vetor.length;j++){
-                if(vetor[j] > vetor[i]){
+                if(vetor[j] < vetor[i]){
                     int temp = vetor[i];
                     vetor[i] = vetor[j];
                     vetor[j] = temp;
