@@ -4,8 +4,32 @@ import java.util.Arrays;
 
 /*
  * Insertion sort 
- * [5,4,3,2,1]
- *  j i
+ * [1,5,3,4,2]  
+ * comparou o 1 ao demais
+ * [1,5,3,4,2]
+ * comparou p 1 com 5 e 5 com 3 
+ * como 3 é menor q o 5 e maior q o 1, entao vai no meio 
+ * [1,3,5,4,2]
+ * ----------------------------
+ * aux = 4
+ * j para no indice 1 que é equivalente ao elemento 3
+ * [1,3,5,5,2]
+ *  0 1 2 3 4
+ * 
+ * 
+ * aux entra no indice j + 1 ==> 1 + 1 ==> 2
+ * [1,3,4,5]
+ * 
+ * --------------------------
+ * [1,3,4,5,2]
+ * aux = 2
+ * seg
+ * pq sempre o i é substituido pelo j que o i é equivalente de J + 1 SOMENTE NO PRIMEIRO CASO.
+ * 1 passo : [1,3,4,5,5] entra o 5 pelo 2 
+ * 2 passo : [1,3,4,4,5] entra o 4 no lugar do 5
+ * 3 passo : [1,3,3,4,5] entra o 3 no lugar do 5 
+ * 4 passo (break) : [1, 2 , 3 , 4 ,5 ] 
+ *  
  * verifica se o numero aux (vetor[i]) é menor. Se ele for menor, o indice da posicao j passa a ocupar j + 1, empurrando 
  * os numeros para frente
  * 
