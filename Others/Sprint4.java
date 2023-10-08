@@ -106,7 +106,7 @@ public class Sprint4 {
         }
 
 
-        // Fazendo Seleciton Sort 
+        // Fazendo Seleciton Sort | Complexidade de tempo: O(n2)
         for(int i =0; i < finalistas.length -1; i++){
             int totalPtsMaior = finalistas[i][0];
             int index =i;
