@@ -62,8 +62,8 @@ public ListaLigada(){
 
     }
 
-
-    public void remover(String conteudo){
+    
+    public void remover(TYPE conteudo){
         Elemento<TYPE> atual = this.primeiro;
         Elemento<TYPE> anterior = null;
 
