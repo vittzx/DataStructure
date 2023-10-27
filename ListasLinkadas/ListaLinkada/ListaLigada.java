@@ -64,6 +64,20 @@ public ListaLigada(){
 
     }
 
+    public void adicionarComeco(TYPE novoValor) {
+        Elemento<TYPE> elemento = new Elemento<TYPE>(novoValor);
+        if(this.primeiro == null && this.ultimo == null){
+            this.primeiro = elemento;
+            this.ultimo = elemento;
+        }
+        else{
+            elemento.setProximoElemento(this.primeiro);
+            elemento.setElementoAnterior(null);
+            this.primeiro = elemento;
+        }
+        
+        this.tamanho++;
+    }
 
     public void remover(TYPE conteudo){
         Elemento<TYPE> atual = this.primeiro;
@@ -120,5 +134,7 @@ public ListaLigada(){
     public IteratorListaLigada<TYPE> getIterator(){
         return new IteratorListaLigada<TYPE>(this.primeiro);
     }
+
+
 
 }

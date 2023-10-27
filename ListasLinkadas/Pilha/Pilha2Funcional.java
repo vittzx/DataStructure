@@ -11,12 +11,12 @@ public class Pilha2Funcional {
         pilha.adicionar("E");
 
         System.out.println("Primeiro elemento da pilha: " + pilha.getPrimeiro().getConteudo());
-        System.out.println("Ultimo elemento da pilha: " + pilha.getUltimo().getConteudo());
+        System.out.println("Topo da pilha: " + pilha.getUltimo().getConteudo());
         System.out.println();
         pilha.remover();
 
         System.out.println("Primeiro elemento da pilha: " + pilha.getPrimeiro().getConteudo());
-        System.out.println("Novo ultimo elemento da pilha: " + pilha.getUltimo().getConteudo());
+        System.out.println("Novo topo elemento da pilha: " + pilha.getUltimo().getConteudo());
         System.out.println();
         pilha.remover();
         
