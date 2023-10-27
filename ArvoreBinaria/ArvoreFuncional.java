@@ -15,6 +15,13 @@ public class ArvoreFuncional {
 
         System.out.println("Em ordem: ");
         arvore.emOrdem(arvore.getRaiz());
+        System.out.println();
+        System.out.println("Pre ordem: ");
+        arvore.preOrdem(arvore.getRaiz());
+        System.out.println();
+        System.out.println("Pos ordem: ");
+        arvore.posOrdem(arvore.getRaiz());
+
 
 
     }

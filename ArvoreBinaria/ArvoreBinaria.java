@@ -65,6 +65,20 @@ public class ArvoreBinaria<T extends Comparable<T>> {
             emOrdem(atual.getDireita()); // ai ele pega o da direita e faz a mesma verificacao tudo denovo
         }
     }
+    public void preOrdem(No<T> atual){
+        if(atual != null){
+            System.out.println(atual.getConteudo()); // entra e imprime o valor
+            emOrdem(atual.getEsquerda());
+            emOrdem(atual.getDireita()); 
+        }
+    }
+    public void posOrdem(No<T> atual){
+        if(atual != null){
+            emOrdem(atual.getEsquerda()); 
+            emOrdem(atual.getDireita()); 
+            System.out.println(atual.getConteudo()); // depois de tudo imprime o valor.
+        }
+    }
 
 
     // Construtor.
