@@ -4,13 +4,18 @@ package ArvoreBinaria;
  * Se for 0 , significa que os valores sao iguais.
  * Se for 1, significa que o valor eh maior doq comparado.
  */
+/*
+ * Em ordem: Esquerda cima direita.
+ * Pre ordem: Cima esquerda direita.
+ * Pos Ordem: esquerda direita cima
+ */
 public class ArvoreBinaria<T extends Comparable<T>> {
     // atributos
     private No<T> raiz;
 
     // getters 
     public No<T> getRaiz() {
-        return raiz;
+        return this.raiz;
     }
 
 
@@ -23,8 +28,8 @@ public class ArvoreBinaria<T extends Comparable<T>> {
     // metodos.
     public void adicionar(T conteudo){
         No<T> novoElemento = new No<T>(conteudo);
-        if(raiz == null){ // raiz nao existe
-            raiz = novoElemento;
+        if(this.raiz == null){ // raiz nao existe
+            this.raiz = novoElemento;
         }
         else{
             No<T> atual = this.raiz;
@@ -39,7 +44,7 @@ public class ArvoreBinaria<T extends Comparable<T>> {
                     }
                 }else{
                     if(atual.getDireita() != null){
-                        atual = atual.getEsquerda();
+                        atual = atual.getDireita();
                     }else{
                         atual.setDireita(novoElemento);
                         break;
@@ -49,6 +54,16 @@ public class ArvoreBinaria<T extends Comparable<T>> {
 
         }
 
+    }
+
+    // metodos de ordenacao 
+
+    public void emOrdem(No<T> atual){
+        if(atual != null){
+            emOrdem(atual.getEsquerda()); // vai ficar entrando na funcao ate dar nulo
+            System.out.println(atual.getConteudo()); // quando der nulo imprime o valor
+            emOrdem(atual.getDireita()); // ai ele pega o da direita e faz a mesma verificacao tudo denovo
+        }
     }
 
 

@@ -9,7 +9,7 @@ public class No<T> {
     // getters 
         
     public T getConteudo(){
-    return this.conteudo;
+        return this.conteudo;
     }
     
     public No<T> getEsquerda() {
