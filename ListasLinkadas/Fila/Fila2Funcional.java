@@ -16,7 +16,7 @@ public class Fila2Funcional {
         fila2.remover();
         System.out.println("Novo primerio: " + fila2.getPrimeiro() );
         
-                fila2.remover();
+        fila2.remover();
         System.out.println("Novo primerio: " + fila2.getPrimeiro() );
         
 

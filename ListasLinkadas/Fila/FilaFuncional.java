@@ -13,6 +13,5 @@ public class FilaFuncional {
         System.out.println("Primeiro: " + fila.getPrimeiro());
         fila.remover();
         System.out.println("Novo primeiro: " + fila.getPrimeiro());
-        System.out.println(fila);
     }
 }
