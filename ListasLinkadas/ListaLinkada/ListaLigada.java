@@ -10,7 +10,6 @@ public class ListaLigada<TYPE> {
     private int tamanho;
     private Elemento<TYPE> primeiro;
     private Elemento<TYPE> ultimo;
-
 // construtor 
 
 public ListaLigada(){
@@ -54,15 +53,18 @@ public ListaLigada(){
         if(this.primeiro == null && this.ultimo == null){
             this.primeiro = elemento;
             this.ultimo = elemento;
-        }else{
-            this.ultimo.setProximoElemento(elemento);
-            this.ultimo = elemento;
         }
+        else{
+            elemento.setElementoAnterior(this.ultimo);
+            this.ultimo.setProximoElemento(elemento);
+            this.ultimo = elemento;  
+        }
+        
         this.tamanho++;
 
     }
 
-    
+
     public void remover(TYPE conteudo){
         Elemento<TYPE> atual = this.primeiro;
         Elemento<TYPE> anterior = null;
@@ -76,6 +78,7 @@ public ListaLigada(){
                 else if(atual == this.primeiro){
                     this.primeiro = atual.getProximoElemento();
                     atual.setProximoElemento(null);
+                    atual.setElementoAnterior(null);
                 }else if(atual == this.ultimo){
                     this.ultimo = anterior;
                     anterior.setProximoElemento(null);

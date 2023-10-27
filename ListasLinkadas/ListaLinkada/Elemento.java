@@ -3,6 +3,7 @@ package ListasLinkadas.ListaLinkada;
 public class Elemento<TYPE>{
     private TYPE conteudo;
     private Elemento<TYPE> proximo;
+    private Elemento<TYPE> anterior;
 
 
     public Elemento(TYPE novoConteudo) {
@@ -34,6 +35,17 @@ public class Elemento<TYPE>{
          */
         this.proximo = novoProximo;
     }
+
+    public void setElementoAnterior(Elemento<TYPE> novoElementoAnterior){
+        this.anterior = novoElementoAnterior;
+    }
+
+    public Elemento<TYPE> getElementoAnterior(){
+        return this.anterior;
+    }
+
+
+    
 
     public String toString(){
         return (String) this.conteudo;

@@ -6,7 +6,7 @@ import ListasLinkadas.ListaLinkada.ListaLigada;
 public class Fila2<T> extends ListaLigada<T>{
     
     public Fila2(){
-        
+        super();
     }
 
     
