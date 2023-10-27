@@ -1,24 +1,21 @@
 package ListasLinkadas.Pilha;
 
+
 public class Pilha2Funcional {
     public static void main(String[] args) {
-        Pilha2<String> pilha = new Pilha2<String>();
+        Pilha2<String> pilha2 = new Pilha2<String>();
 
-        pilha.adicionar("A");
-        pilha.adicionar("B");
-        pilha.adicionar("C");
-        pilha.adicionar("D");
-        pilha.adicionar("E");
+        pilha2.adicionarComeco("A");
+        pilha2.adicionarComeco("B");
+        pilha2.adicionarComeco("C");
+        pilha2.adicionarComeco("D");
+        pilha2.adicionarComeco("E");
 
-        System.out.println("Primeiro elemento da pilha: " + pilha.getPrimeiro().getConteudo());
-        System.out.println("Topo da pilha: " + pilha.getUltimo().getConteudo());
-        System.out.println();
-        pilha.remover();
+        System.out.println("TOPO : " + pilha2.get());
 
-        System.out.println("Primeiro elemento da pilha: " + pilha.getPrimeiro().getConteudo());
-        System.out.println("Novo topo elemento da pilha: " + pilha.getUltimo().getConteudo());
-        System.out.println();
-        pilha.remover();
-        
+        pilha2.remover();
+
+        System.out.println("Novo TOPO: " + pilha2.get());
+
     }
 }

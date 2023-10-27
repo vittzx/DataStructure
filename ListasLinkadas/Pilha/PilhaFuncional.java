@@ -17,3 +17,6 @@ public class PilhaFuncional {
 
     }
 }
+
+
+// O TOPO DA PILHA EH SEMPRE O PRIMEIRO ELEMENTO, OU SEJ A
