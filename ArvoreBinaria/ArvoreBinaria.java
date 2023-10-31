@@ -79,7 +79,7 @@ public class ArvoreBinaria<T extends Comparable<T>> {
             System.out.println(atual.getConteudo()); // depois de tudo imprime o valor.
         }
     }
-
+    
 
     // Construtor.
     public ArvoreBinaria(){
