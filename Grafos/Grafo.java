@@ -37,4 +37,28 @@ public class Grafo<T> {
         }
         return null;
     }
+
+    public void buscaEmLargura(){
+        ArrayList<Vertice<T>> marcados = new ArrayList<Vertice<T>>();
+        ArrayList<Vertice<T>> fila = new ArrayList<Vertice<T>>();
+        Vertice<T> atual = this.vertices.get(0);
+        marcados.add(atual);
+        System.out.println(atual.getConteudo());
+        fila.add(atual);
+        while(fila.size() > 0){
+            Vertice<T> visitado  = fila.get(0);
+            for(int i =0;  i < visitado.getArestasSaida().size();i++){
+                Vertice<T> proximo = visitado.getArestasSaida().get(i).getFim(); // pega a aresta e pega o ponto final da aresta.
+                if(!marcados.contains(proximo)){ // se o vertice nao contem em marcados
+                    marcados.add(proximo);
+                    System.out.println(proximo.getConteudo());
+                    fila.add(proximo);
+                }
+            }
+            fila.remove(0);
+        }
+        
+
+
+    }
 }

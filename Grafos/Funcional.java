@@ -3,19 +3,22 @@ package Grafos;
 public class Funcional {
     public static void main(String[] args) {
         
-        Grafo<String> grafo = new Grafo<>();
-        grafo.adicionarVertice("ze");
-        grafo.adicionarVertice("Vitor");
-        grafo.adicionarVertice("roberto");
-        grafo.adicionarVertice("cleber");
-        grafo.adicionarVertice("niuza");
+        Grafo<String> grafo = new Grafo<String>();
+        grafo.adicionarVertice("Cráudio");
+        grafo.adicionarVertice("João");
+        grafo.adicionarVertice("Lorenzo");
+        grafo.adicionarVertice("Creuza");
+        grafo.adicionarVertice("Créber");
 
-
-        grafo.adicionarAresta(2, "ze", "Vitor");
-        grafo.adicionarAresta(3, "roberto", "Vitor");
-        grafo.adicionarAresta(4, "cleber", "niuza");
-        grafo.adicionarAresta(1, "Vitor", "cleber");
-        grafo.adicionarAresta(2, "Vitor", "ze");
-
+        
+        grafo.adicionarAresta(2, "João", "Lorenzo");
+        grafo.adicionarAresta(3, "Lorenzo", "Créber");
+        grafo.adicionarAresta(1, "Créber", "Creuza");
+        grafo.adicionarAresta(1, "João", "Creuza");
+        grafo.adicionarAresta(3, "Cráudio", "João");
+        grafo.adicionarAresta(2, "Cráudio", "Lorenzo");
+        
+        
+        grafo.buscaEmLargura();
     }
 }
