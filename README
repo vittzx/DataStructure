@@ -1,5 +1,25 @@
-Repositorio com proposito de estudo de estrutura de dados em Java e complexidade de Tempo.
+Repositorio com proposito de estudo de Estrutura de Dados em Java e Complexidade de Tempo.
 
-Aqui tem listas linkadas, pilhas, filas, busca binaria, bubble sort, insertion sort,
-selection sort, recursividade, algoritimo heap sort, algoritimo quick sort, 
-comparacao e ordenacao de algoritimos, arvore binaria, grafos e shell sort.
+Itens Estudados: 
+  - Pilhas 
+  - Filas
+  - Listas Linkadas 
+  - Complexidade de Tempo  (O log n)
+  - Algoritimos de Ordenacao 
+  - Buscas Binarias e outras do tipo
+  - Arvore Binaira 
+  - Grafos (Vertices e Arestas.)
+
+------------------------------------------------------------------------------------------------
+
+Repository for the propouse of Data Structure study in Java and Time complexity
+
+Studied Itens:
+  - Stacks 
+  - Queue
+  - Linked Lists
+  - Time complexity (O log n)
+  - Sorting Algorithms
+  - Binary search
+  - Binary tree
+  - Graphs (Vertices and Edges.)
